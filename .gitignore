@@ -1,0 +1,24 @@
+﻿# Large generated/downloaded data — regenerate or re-download instead of committing
+**/data/*.npy
+**/data/*.mat
+**/data/scalers.json
+
+# Trained model checkpoints — large, regenerable via training scripts
+**/models/*.pth
+**/models/eval_results*.json
+
+# Keep small result artifacts (plots are fine, usually <1MB each)
+!**/models/comparison_plot*.png
+
+# Python cruft
+__pycache__/
+*.pyc
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Backups
+*_backup_*/
+*.bak
